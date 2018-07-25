@@ -1,0 +1,232 @@
+body 
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	overflow-x: hidden
+	opacity: 1
+	padding: 0
+	margin: 0
+	background: #293140
+	height: 100vh
+
+
+.container 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	max-width: 1920px
+	position: relative
+	height: 100vh
+
+
+.buttons 
+	position: absolute
+	right: 4px
+	top: -28px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+
+.buttons span 
+	margin-left: 5px
+	background: #69707F
+	height: 16px
+	width: 16px
+
+.left-col 
+	background: #fff
+	border-right: 1px solid #eee
+	width: 240px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	max-width: 240px
+
+
+
+.left-col-content 
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	-webkit-flex-direction: column
+	-moz-flex-direction: column
+	-ms-flex-direction: column
+	-o-flex-direction: column
+	flex-direction: column
+	justify-content: start
+	flex: 1
+	overflow-y: scroll
+	overflow-x: hidden
+
+.group-items 
+	overflow-y: scroll
+	height: 100%
+	width: 240px
+
+
+.item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: start
+	-ms-align-items: center
+	align-items: center
+	width: 100%
+	cursor: pointer
+
+.item:hover 
+	background: #eee
+
+ 
+
+.group-items .item 
+	border-bottom: 1px solid #eee
+
+
+.first-item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: start
+	-ms-align-items: center
+	align-items: center
+	border-bottom: 1px solid #eee
+	background: #fff
+	z-index: 333
+	width: 240px
+
+.item-img 
+	margin: 10px 20px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+
+.item-img img
+	height: 40px
+	width: 40px
+	border-radius: 50%
+	background: #B1B1B1
+
+.item-name 
+	font-size: 12px
+	color: #B1B1B1
+
+
+.center-col 
+	background: #fff
+	border-right: 1px solid #eee
+	min-width: 720px
+	width: 100%
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	flex: 3
+
+
+.right-col 
+	background: #fff
+	border-right: 1px solid #eee
+	max-width: 	600px
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+
+
+.left-col-header, .left-col-footer, .center-col-header,  .center-col-footer, .right-col-header, .right-col-footer 
+	background: #F7F8FA
+	min-height: 30px
+
+
+*::-webkit-scrollbar 
+    width: 0px
+    background: transparent
+
+.center-col-content, .right-col-content
+	overflow-y: scroll
+	height: 100%
+	padding: 10px
+
+.free-block
+	color: #fff
+
+.wrap	
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin: 40px 5px 10px 80px
+	position: relative	
+
+
+
+@media only screen and (max-width : 1520px)
+
+	.item-name
+		display: none
+		
+	.left-col
+		position: absolute
+		width: 80px
+		bottom: 0
+		top: 0
+
+	.item
+		width: 80px
+
+	.first-item
+		width: 80px
+	
+
+	.left-col:hover
+		width: 240px
+
+	.left-col:hover .item, .left-col:hover .first-item
+		width: 240px	
+
+	.left-col:hover .item-name
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+
+	.center-col
+		margin-left: 80px
+
+@media only screen and (max-width : 1400px)
+	.right-col 
+		min-width: 300px
+
+@media only screen and (max-width : 1200px)
+	.right-col	
+		display: none
+
+@media only screen and (max-width : 900px)	
+	.center-col
+		min-width: 240px
+
